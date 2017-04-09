@@ -28,7 +28,7 @@ const plugins = [
 ];
 
 var config = {
-  entry: "./examples/index.js",
+  entry: [path.join(__dirname, '/examples/index.js')],
   resolve: {
     extensions: [".js", ".jsx"]
   },
