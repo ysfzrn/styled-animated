@@ -1,0 +1,19 @@
+import { keyframes }  from 'styled-components'
+
+
+export function rotateOutUpLeft(){
+	const rotateOutUpLeft = keyframes`
+	   from {
+            transform-origin: left bottom;
+            opacity: 1;
+        }
+
+        to {
+            transform-origin: left bottom;
+            transform: rotate3d(0, 0, 1, -45deg);
+            opacity: 0;
+        }
+	`;
+	
+	return rotateOutUpLeft;
+}

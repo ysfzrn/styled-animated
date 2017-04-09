@@ -7,11 +7,52 @@ import Animated, {
   bounceInUp,
   bounceInLeft,
   bounceInRight,
+  bounceOut,
+  bounceOutDown,
+  bounceOutLeft,
+  bounceOutRight,
+  bounceOutUp,
   fadeIn,
   fadeInDown,
   fadeInUp,
   fadeInLeft,
   fadeInRight,
+  fadeOut,
+  fadeOutDown,
+  fadeOutLeft,
+  fadeOutRight,
+  fadeOutUp,
+  flip,
+  flipInX,
+  flipInY,
+  flipOutX,
+  flipOutY,
+  rotateIn,
+  rotateInDownLeft,
+  rotateInUpLeft,
+  rotateInDownRight,
+  rotateInUpRight,
+  rotateOut,
+  rotateOutDownLeft,
+  rotateOutDownRight,
+  rotateOutUpLeft,
+  rotateOutUpRight,
+  lightSpeedIn,
+  lightSpeedOut,
+  slideInDown,
+  slideInLeft,
+  slideInRight,
+  slideInUp,
+  zoomIn,
+  zoomInDown,
+  zoomInLeft,
+  zoomInRight,
+  zoomInUp,
+  zoomOut,
+  zoomOutDown,
+  zoomOutLeft,
+  zoomOutRight,
+  zoomOutUp,
   jello,
   shake,
   tada,
@@ -20,12 +61,7 @@ import Animated, {
   flash,
   headshake,
   pulse,
-  rubberBrand,
-  rotateIn,
-  rotateInDownLeft,
-  rotateInUpLeft,
-  flip,
-  flipInX
+  rubberBrand
 } from "../src";
 
 injectGlobal`
@@ -52,7 +88,12 @@ export default class Root extends Component {
             { id: 2, name: "bounceInDown", effect: bounceInDown },
             { id: 3, name: "bounceInUp", effect: bounceInUp },
             { id: 4, name: "bounceInLeft", effect: bounceInLeft },
-            { id: 5, name: "bounceInRight", effect: bounceInRight }
+            { id: 5, name: "bounceInRight", effect: bounceInRight },
+            { id: 6, name: "bounceOut", effect: bounceOut },
+            { id: 7, name: "bounceOutLeft", effect: bounceOutLeft },
+            { id: 8, name: "bounceOutRight", effect: bounceOutRight },
+            { id: 9, name: "bounceOutUp", effect: bounceOutUp },
+            { id: 10, name: "bounceOutDown", effect: bounceOutDown }
           ]
         },
         {
@@ -63,7 +104,12 @@ export default class Root extends Component {
             { id: 2, name: "fadeInDown", effect: fadeInDown },
             { id: 3, name: "fadeInUp", effect: fadeInUp },
             { id: 4, name: "fadeInLeft", effect: fadeInLeft },
-            { id: 5, name: "fadeInRight", effect: fadeInRight }
+            { id: 5, name: "fadeInRight", effect: fadeInRight },
+            { id: 6, name: "fadeOut", effect: fadeOut },
+            { id: 7, name: "fadeOutDown", effect: fadeOutDown },
+            { id: 8, name: "fadeOutLeft", effect: fadeOutLeft },
+            { id: 9, name: "fadeOutRight", effect: fadeOutRight },
+            { id: 10, name: "fadeOutUp", effect: fadeOutUp }
           ]
         },
         {
@@ -72,7 +118,14 @@ export default class Root extends Component {
           effects: [
             { id: 1, name: "rotateIn", effect: rotateIn },
             { id: 2, name: "rotateInDownLeft", effect: rotateInDownLeft },
-            { id: 3, name: "rotateInUpLeft", effect: rotateInUpLeft }
+            { id: 3, name: "rotateInUpLeft", effect: rotateInUpLeft },
+            { id: 4, name: "rotateInDownRight", effect: rotateInDownRight },
+            { id: 5, name: "rotateInUpRight", effect: rotateInUpRight },
+            { id: 6, name: "rotateOut", effect: rotateOut },
+            { id: 7, name: "rotateOutDownLeft", effect: rotateOutDownLeft },
+            { id: 8, name: "rotateOutDownRight", effect: rotateOutDownRight },
+            { id: 9, name: "rotateOutUpLeft", effect: rotateOutUpLeft },
+            { id: 10, name: "rotateOutUpRight", effect: rotateOutUpRight }
           ]
         },
         {
@@ -80,11 +133,48 @@ export default class Root extends Component {
           group: "flip",
           effects: [
             { id: 1, name: "flip", effect: flip },
-            { id: 2, name: "flipInX", effect: flipInX }
+            { id: 2, name: "flipInX", effect: flipInX },
+            { id: 3, name: "flipInY", effect: flipInY },
+            { id: 4, name: "flipOutX", effect: flipOutX },
+            { id: 5, name: "flipOutY", effect: flipOutY }
           ]
         },
         {
           id: 5,
+          group: "lightspeed",
+          effects: [
+            { id: 1, name: "lightSpeedIn", effect: lightSpeedIn },
+            { id: 2, name: "lightSpeedOut", effect: lightSpeedOut }
+          ]
+        },
+        {
+          id: 6,
+          group: "slide",
+          effects: [
+            { id: 1, name: "slideInDown", effect: slideInDown },
+            { id: 2, name: "slideInLeft", effect: slideInLeft },
+            { id: 3, name: "slideInRight", effect: slideInRight },
+            { id: 4, name: "slideInUp", effect: slideInUp }
+          ]
+        },
+        {
+          id: 7,
+          group: "zoom",
+          effects: [
+            { id: 1, name: "zoomIn", effect: zoomIn },
+            { id: 2, name: "zoomInDown", effect: zoomInDown },
+            { id: 3, name: "zoomInUp", effect: zoomInUp },
+            { id: 4, name: "zoomInLeft", effect: zoomInLeft },
+            { id: 5, name: "zoomInRight", effect: zoomInRight },
+            { id: 6, name: "zoomOut", effect: zoomOut },
+            { id: 7, name: "zoomOutDown", effect: zoomOutDown },
+            { id: 8, name: "zoomOutLeft", effect: zoomOutLeft },
+            { id: 9, name: "zoomOutRight", effect: zoomOutRight },
+            { id: 10, name: "zoomOutUp", effect: zoomOutUp },
+          ]
+        },
+        {
+          id: 8,
           group: "others",
           effects: [
             { id: 1, name: "bounce", effect: bounce },

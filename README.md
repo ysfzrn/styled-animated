@@ -1,2 +1,2 @@
 # styled-animated
-React Animation Library made with styled-components like Animated.css
+React Animation Library was made with styled-components like Animated.css
