@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env  NODE_ENV=development  webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
+    "ghpage": "cross-env  NODE_ENV=development  webpack --config webpack-dev-server.config.js --progress --inline --colors",
     "build": "cross-env  NODE_ENV=production webpack --config webpack-production.config.js --progress --colors"
   },
   "keywords": [
