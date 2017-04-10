@@ -1,5 +1,5 @@
 I
-was inspired by[ Animated.css](https://ysfzrn.github.io/styled-animated/)
+was inspired by[ Animated.css](https://daneden.github.io/animate.css/)
 
 #
 # [Live Demo](https://ysfzrn.github.io/styled-animated/)
