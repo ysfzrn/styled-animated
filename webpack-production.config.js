@@ -27,7 +27,7 @@ const plugins = [
   }),
   new webpack.optimize.UglifyJsPlugin({
       include: /\.js$/,
-      minimize: false,
+      minimize: true,
       compress: {
         screw_ie8: true,
         warnings: false
